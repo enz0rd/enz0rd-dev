@@ -1,14 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+
 .Main {
 }
 
 .Main-Banner-Title {
     position: absolute;
+    width: 227px;
+    height: 188px;
+    left: 102px;
+    top: 200px;
+
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 140px;
+    /* identical to box height */
+
+
+    background: -webkit-linear-gradient(180deg, #55ACD1 -5.77%, #C82AE1 108.97%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    filter: drop-shadow(-2px 4px 5px rgba(0, 0, 0, 0.66));
+}
+
+.Main-Banner-Text {
+    position: absolute;
+    height: 50px;
+    left: 117px;
+    top: 410px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+    /* identical to box height */
+
+    word-wrap: break-word;
+
+    color: #FFFFFF;
+
+    text-shadow: -2px 4px 5px rgba(0, 0, 0, 0.66);
 }
 
 .Main-Banner-Img {
     position: absolute;
-
-    filter: blur(5px);
+    z-index: -2;
     background-color: aliceblue;
     object-fit: cover;
     width: 120%;
