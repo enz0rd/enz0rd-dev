@@ -19,7 +19,7 @@ app.listen(port, () => {
         if(req.accepts('html')) {
             var error = [{
                 title: "404 not found",
-                message: "Page not found, returning to home"
+                message: "Page not found"
             }]
             res.render('../views/error', {data:error});
         }
