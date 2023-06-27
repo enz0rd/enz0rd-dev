@@ -10,7 +10,7 @@ class PortfolioController {
                 title: "Error",
                 message: error.message
             })
-            res.render('/public/views/error', { data: error_message });
+            res.render('./public/views/error', { data: error_message });
         }
     }
 }
