@@ -12,7 +12,7 @@ const port = 3000;
 app.listen(port, () => {
     console.log(`rodando:
     http://localhost:3000/`)
-    app.use(express.static(__dirname))
+    app.use(express.static('public'))
     app.use(function(req, res, next) {
         res.status(404)
 
@@ -21,7 +21,7 @@ app.listen(port, () => {
                 title: "404 not found",
                 message: "Page not found"
             }]
-            res.render('../views/error', {data:error});
+            res.render('./src/views/error', {data:error});
         }
     })
 })
