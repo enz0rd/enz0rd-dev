@@ -12,7 +12,7 @@ const port = 3000;
 app.listen(port, () => {
     console.log(`rodando:
     http://localhost:3000/`)
-    app.use(express.static('./'));
+    app.use(express.static(__dirname + '/public'));
     app.use(function(req, res, next) {
         res.status(404)
 
