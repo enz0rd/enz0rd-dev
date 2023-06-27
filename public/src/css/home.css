@@ -502,3 +502,68 @@ a:hover {
 .footer-page {
   border-top: 1px solid #afafaf86;
 }
+
+/* dakr mode */
+
+* {
+  transition: 0.5s;
+}
+
+h5.dark {
+  color: #fff !important;
+}
+
+div.dark {
+  color: #fff !important;
+}
+
+a.dark {
+  color: #fff !important;
+}
+
+i.dark {
+  color: #fff !important;
+}
+
+p.dark {
+  color: #fff !important;
+}
+
+.home-title.dark {
+  color: #fff !important;
+}
+
+.button.dark {
+  color: #fff !important;
+}
+
+p.dark {
+  color: #fff !important;
+}
+
+.postcard.dark {
+  border: 2px solid #fff;
+}
+
+a.btn.dark {
+  border-color: #fff !important;
+}
+
+.postcard__bar.dark {
+  background-color: #770aaa !important;
+}
+
+.blockabout-inner.dark {
+  border-color: #ffffff7c;
+}
+
+.nav-link:hover.dark {
+  border-radius: 0.375rem;
+  background: #fff !important;
+  color: #000 !important;
+}
+
+.dark::selection {
+  background-color: #fff !important;
+  color: #770aaa !important;
+}
