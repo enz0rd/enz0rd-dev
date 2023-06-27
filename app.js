@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended:true}));
 const port = 3000;
 
 app.listen(port, () => {
-    console.log(`Server rodando em:
+    console.log(`rodando:
     http://localhost:3000/`)
     app.use(express.static(__dirname))
     app.use(function(req, res, next) {
