@@ -22,7 +22,7 @@ app.listen(port, () => {
                 title: "404 not found",
                 message: "Page not found"
             }]
-            res.render('/views/error', {data:error});
+            res.render('/src/views/error', {data:error});
         }
     })
 })
