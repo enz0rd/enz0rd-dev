@@ -1,5 +1,6 @@
 const express = require('express');
 const routes = require('./routes/index');
+const path = require('path')
 
 const app = express()
 
@@ -12,7 +13,7 @@ const port = 3000;
 app.listen(port, () => {
     console.log(`rodando:
     http://localhost:3000/`)
-    app.use(express.static(__dirname + '/public'));
+    app.use(express.static(__dirname));
     app.use(function(req, res, next) {
         res.status(404)
 
@@ -21,7 +22,7 @@ app.listen(port, () => {
                 title: "404 not found",
                 message: "Page not found"
             }]
-            res.render('./public/src/views/error', {data:error});
+            res.render('/views/error', {data:error});
         }
     })
 })
