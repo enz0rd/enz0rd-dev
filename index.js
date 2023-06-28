@@ -7,13 +7,13 @@ const app = express()
 routes(app);
 
 app.use(express.urlencoded({extended:true}));
+app.use(express.static(__dirname));
 
 const port = 3000;
 
 app.listen(port, () => {
     console.log(`rodando:
     http://localhost:3000/`)
-    app.use(express.static(__dirname));
     app.use(function(req, res, next) {
         res.status(404)
 
