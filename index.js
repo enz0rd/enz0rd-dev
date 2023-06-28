@@ -7,7 +7,7 @@ const app = express()
 routes(app);
 
 app.use(express.urlencoded({extended:true}));
-app.use(express.static(__dirname));
+app.use(express.static(path.join(__dirname, '/src')));
 
 const port = 3000;
 
