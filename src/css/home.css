@@ -1,5 +1,6 @@
 body {
   font-family: 'Montserrat';
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
 }
 
 ::selection {
@@ -9,6 +10,17 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+.header-site {
+  width: 100%;
+  transition: 0.5s;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
+}
+
+.header-site.dark {
+  width: 100%;
+  background: #000;
 }
 
 .form-control-dark {
