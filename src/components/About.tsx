@@ -13,7 +13,7 @@ const About = () => {
                     <span className='text-md font-regular text-zinc-50'>I've been a fullstack developer since Jan/2023 and I work at Gdoor Sistemas as QA.</span>
                     <span className='text-md font-regular text-zinc-50'>I developed some portfolio projects, such as an email system, an educational platform, a website inspired by Buscapé and REST APIs.</span>
                 </div>
-            </div>
+            </div> 
         </div >
     );
 }
