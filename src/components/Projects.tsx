@@ -38,7 +38,7 @@ const Projects = () => {
                         <div className="overflow-hidden rounded-md">
                             <img
                                 src={'/images/Projects/iz0.png'}
-                                className="aspect-[16/9] w-[300px] object-top rounded-lg bg-zinc-900 h-fit w-fit object-cover"
+                                className="aspect-[16/9] w-[300px] object-top rounded-lg bg-zinc-900 h-fit object-cover"
                             />
                         </div>
                         <div className="flex gap-2 flex-col text-wrap">
@@ -60,7 +60,7 @@ const Projects = () => {
                         <div className="overflow-hidden rounded-md">
                             <img
                                 src={'/images/Projects/Email.png'}
-                                className="aspect-[16/9] w-[300px] object-top border rounded-lg bg-zinc-900 h-fit w-fit object-cover"
+                                className="aspect-[16/9] w-[300px] object-top border rounded-lg bg-zinc-900 h-fit  object-cover"
                             />
                         </div>
                         <div className="flex gap-2 flex-col text-wrap flex-wrap">
@@ -80,7 +80,7 @@ const Projects = () => {
                         <div className="overflow-hidden rounded-md rounded-lg bg-zinc-900">
                             <img
                                 src={'/images/Projects/POS.ico'}
-                                className="aspect-[16/9] w-[300px] object-scale-down p-4 h-fit w-fit object-cover"
+                                className="aspect-[16/9] w-[300px] object-scale-down p-4 h-fit  object-cover"
                             />
                         </div>
                         <div className="flex gap-2 flex-col text-wrap flex-wrap">
@@ -100,7 +100,7 @@ const Projects = () => {
                         <a href="https://github.com/enz0rd" target="_blank">
                             <div className="overflow-hidden rounded-md">
                                 <div
-                                    className="aspect-[16/9] w-[300px] bg-gradient-to-br from-[#505050] via-[#212121] to-[#121212] w-[20rem] flex justify-center align-middle rounded-lg h-fit w-fit object-cover"
+                                    className="aspect-[16/9] w-[300px] bg-gradient-to-br from-[#505050] via-[#212121] to-[#121212] w-[20rem] flex justify-center align-middle rounded-lg h-fit object-cover"
                                 >
                                     <CirclePlus className="m-auto text-zinc-50 size-[50%]" />
                                 </div>

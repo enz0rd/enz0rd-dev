@@ -11,13 +11,13 @@ const Skills = () => {
                 <h1 className="text-3xl font-bold text-zinc-50">Hard Skills</h1>
                 <div className="w-full h-fit grid grid-cols-1 gap-2">
                     <div className="w-full flex flex-row m-auto justify-between text-center bg-zinc-50 p-3 rounded-2xl">
-                        <FaNodeJs className="scale-[3] m-3"/>
-                        <Typescript className="scale-[3] m-3"/>
-                        <Javascript className="scale-[3] m-3"/> 
-                        <FaReact className="scale-[3] m-3"/>
-                        <SiExpress className="scale-[3] m-3"/>
-                        <FaHtml5 className="scale-[3] m-3"/>
-                        <FaCss3Alt className="scale-[3] m-3"/>
+                        <FaNodeJs className="lg:scale-[3] scale-[2] m-3"/>
+                        <Typescript className="lg:scale-[3] scale-[2] m-3"/>
+                        <Javascript className="lg:scale-[3] scale-[2] m-3"/> 
+                        <FaReact className="lg:scale-[3] scale-[2] m-3"/>
+                        <SiExpress className="lg:scale-[3] scale-[2] m-3"/>
+                        <FaHtml5 className="lg:scale-[3] scale-[2] m-3"/>
+                        <FaCss3Alt className="lg:scale-[3] scale-[2] m-3"/>
                     </div>
                 </div>
                 <h1 className="text-3xl font-bold text-zinc-50">Soft Skills</h1>

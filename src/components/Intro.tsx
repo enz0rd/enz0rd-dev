@@ -11,7 +11,7 @@ const Intro = () => {
                     <div className='col-span-1 md:col-start-1 lg:col-start-1 md:row-start-1 space-y-3 lg:row-start-1 h-full md:h-[40%] lg:h-[40%] md:ml-[3rem] lg:ml-[5rem] flex flex-col gap-1 '>
                         <div className='group text-zinc-50 text-center lg:text-left md:text-left flex flex-col gap-2'>
                             <p className='text-lg font-regular'>Hi, i'm</p>
-                            <h1 className='text-[7rem] font-bold mt-[-3rem] mb-[-2rem]'>Enzo</h1>
+                            <h1 className='text-[7rem] font-extrabold mt-[-2rem] ml-[-.5rem] mb-[-2rem]'>Enzo</h1>
                             <p className='text-lg font-regular'>Fullstack developer</p>
                         </div>
                         <div className='m-auto w-fit bg-[#FDC500] px-4 p-2 rounded-full'>
