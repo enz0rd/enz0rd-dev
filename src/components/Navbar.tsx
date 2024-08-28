@@ -1,12 +1,10 @@
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Menu } from "lucide-react";
 
-
-
 const Navbar = () => {
     return (
-        <div className="absolute sticky top-4 z-[5] w-full my-4 flex justify-around">
-            <div className="w-[90%] h-[4rem] backdrop-blur p-2 flex flex-row justify-between rounded-full bg-zinc-900/50">
+        <div className="fixed top-4 w-full flex justify-around z-10">
+            <div className="w-[90%] h-[4rem] border border-zinc-900 backdrop-blur p-2 flex flex-row justify-between rounded-full bg-zinc-900/50">
                 <div className="flex bg-zinc-900 w-fit rounded-full px-4">
                     <h1 className="m-auto text-zinc-50 font-bold">enz0rd<span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FDC500] to-[#FFE383]">.dev</span></h1>
                 </div>
@@ -25,7 +23,7 @@ const Navbar = () => {
                             <Menu className="text-zinc-50" />
                         </div>
                     </SheetTrigger>
-                    <SheetContent className="bg-zinc-900 text-zinc-50 m-auto flex flex-col justify-center h-[100vh]">
+                    <SheetContent className="fixed bg-zinc-900 text-zinc-50 m-auto flex flex-col justify-center h-[100vh]">
                         <div className="flex bg-zinc-900 align-middle justify-center w-fit rounded-full px-2">
                             <h1 className="m-auto text-zinc-50 font-bold">enz0rd<span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FDC500] to-[#FFE383]">.dev</span></h1>
                         </div>
@@ -40,7 +38,7 @@ const Navbar = () => {
                 </Sheet>
             </div>
         </div>
-    )
+    );
 }
 
 export default Navbar;
