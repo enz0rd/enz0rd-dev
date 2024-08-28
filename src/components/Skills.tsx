@@ -6,8 +6,8 @@ import { SiExpress } from "react-icons/si";
 
 const Skills = () => {
     return (
-        <div id='skills' className="w-full py-[5rem] flex align-middle justify-center col-span-1 bg-gradient-to-br from-[#8D04E9] via-[#5C0099] to-[#1F0033]">
-            <div className="m-[2rem] w-fit my-auto flex flex-col gap-5">
+        <div id='skills' className="w-full lg:justify-start py-[5rem] flex align-middle justify-center col-span-1 bg-gradient-to-br from-[#8D04E9] via-[#5C0099] to-[#1F0033]">
+            <div className="m-[2rem] lg:w-[600px] w-fit my-auto flex flex-col gap-5">
                 <h1 className="text-3xl font-bold text-zinc-50">Hard Skills</h1>
                 <div className="w-full h-fit grid grid-cols-1 gap-2">
                     <div className="w-full flex flex-row m-auto justify-between text-center bg-zinc-50 p-3 rounded-2xl">

@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Footer = () => {
     return (
         <div className="w-full h-fit py-2 py-5 justify-center bg-zinc-800">
-            <div className="w-[90%] flex justify-between m-auto align-middle">
+            <div className="w-[90%] lg:w-[1280px] flex justify-between m-auto align-middle">
                 <div className="flex flex-col gap-3">
                     <div className="flex flex-row justify-center gap-2">
                         <h1 className="text-lg lg:text-2xl m-auto text-zinc-50 font-bold">enz0rd<span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FDC500] to-[#FFE383]">.dev</span></h1>
@@ -24,7 +24,7 @@ const Footer = () => {
                     <CiCircleChevUp className="scale-[2] my-3" />
                 </Button>
             </div>
-            <div className="hidden lg:visible w-[80%] mt-6 lg:flex flex-col align-middle m-auto gap-4">
+            <div className="hidden lg:w-[1280px] lg:visible w-[80%] mt-6 lg:flex flex-col align-middle m-auto gap-4">
                 <div className="border-t border-zinc-500"></div>
                 <div className="flex px-4 py-2 flex-row gap-6 m-auto">
                     <a className="hover:text-[#8D04E9] text-zinc-50 transition-[.5s]" href="#top">Home</a>

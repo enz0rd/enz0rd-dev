@@ -3,8 +3,8 @@ import { Menu } from "lucide-react";
 
 const Navbar = () => {
     return (
-        <div className="fixed top-4 w-full flex justify-around z-10">
-            <div className="w-[90%] h-[4rem] border border-zinc-900 backdrop-blur p-2 flex flex-row justify-between rounded-full bg-zinc-900/50">
+        <div className="fixed top-4 w-full lg:justify-center flex justify-around z-10">
+            <div className="w-[90%] lg:w-[1280px] h-[4rem] border border-zinc-900 backdrop-blur p-2 flex flex-row justify-between rounded-full bg-zinc-900/50">
                 <div className="flex bg-zinc-900 w-fit rounded-full px-4">
                     <h1 className="m-auto text-zinc-50 font-bold">enz0rd<span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FDC500] to-[#FFE383]">.dev</span></h1>
                 </div>
