@@ -5,8 +5,8 @@ import { CircleChevronDown } from 'lucide-react'
 const Intro = () => {
 
     return (
-        <div style={{ backgroundImage: `url(${imageBackground})`, backgroundSize: 'cover' }} className='w-full h-fit pb-20 pt-[7rem] w-[90%] justify-center grid grid-cols-1'>
-            <div className='space-y-6 md:space-y-0 lg:space-y-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 flex flex-col justify-center lg:w-[1280px] lg:m-auto items-center'>
+        <div style={{ backgroundImage: `url(${imageBackground})`, backgroundSize: 'cover' }} className='w-full lg:h-[100vh] h-fit pb-20 pt-[7rem] justify-center grid grid-cols-1'>
+            <div className='space-y-6 md:space-y-0 lg:space-y-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 justify-center lg:w-[1280px] lg:m-auto items-center'>
                 <img className='m-auto w-[80%] lg:w-[80%] col-span-1 md:col-start-2 lg:col-start-2' src={me} alt="me" />
                 <div className='col-span-1 md:col-start-1 lg:col-start-1 md:row-start-1 space-y-3 lg:row-start-1 h-full md:h-[40%] lg:h-[40%] md:ml-[3rem] lg:ml-[5rem] flex flex-col gap-1 '>
                     <div className='group text-zinc-50 text-center lg:text-left md:text-left flex flex-col gap-2'>
