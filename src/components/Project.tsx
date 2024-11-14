@@ -1,4 +1,4 @@
-import { BadgePlusIcon, CheckCircle2Icon } from "lucide-react";
+import { BadgePlusIcon } from "lucide-react";
 import JsBadge from "./tech-badges/Javascript";
 import NodeBadge from "./tech-badges/NodeJs";
 import ReactBadge from "./tech-badges/React";
