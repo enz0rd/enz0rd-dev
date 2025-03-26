@@ -5,11 +5,20 @@ import { CirclePlus } from 'lucide-react'
 const projectsData = [
     {
         project: {
+            name: 'LumaClone',
+            description: 'Clone of the Luma application (for educational purposes)',
+            image: '/images/Projects/lumaclone.png',
+            url: 'https://github.com/enz0rd/lumaclone.git',
+            current: true,
+        },
+        badges: ['ts', 'nextjs', 'react', 'node']
+    },
+    {
+        project: {
             name: 'GoClass',
             description: 'An educational platform like Google Classroom',
             image: '/images/Projects/GoClass.png',
             url: 'https://github.com/enz0rd/frontend-goclass.git',
-            current: true,
         },
         badges: ['js', 'ts', 'react', 'node']
     },
@@ -37,15 +46,6 @@ const projectsData = [
             description: 'A demonstration of an email system',
             image: '/images/Projects/Email.png',
             url: 'https://github.com/enz0rd/email-prototype.git',
-        },
-        badges: ['js', 'node'],
-    },
-    {
-        project: {
-            name: 'Point of Sales Prototype',
-            description: 'A demonstration of a point of sales',
-            image: '/images/Projects/POS.jpg',
-            url: 'https://github.com/enz0rd/PDVSimples2024.git',
         },
         badges: ['js', 'node'],
     },

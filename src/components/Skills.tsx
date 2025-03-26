@@ -3,6 +3,7 @@ import { IoLogoJavascript as Javascript } from "react-icons/io";
 import { SiTypescript as Typescript } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const Skills = () => {
     return (
@@ -18,6 +19,7 @@ const Skills = () => {
                         <SiExpress className="lg:scale-[3] scale-[2] m-3"/>
                         <FaHtml5 className="lg:scale-[3] scale-[2] m-3"/>
                         <FaCss3Alt className="lg:scale-[3] scale-[2] m-3"/>
+                        <TbBrandNextjs className="lg:scale-[3] scale-[2] m-3"/>
                     </div>
                 </div>
                 <h1 className="text-3xl font-bold text-zinc-50">Soft Skills</h1>

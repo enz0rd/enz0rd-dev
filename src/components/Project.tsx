@@ -3,6 +3,7 @@ import JsBadge from "./tech-badges/Javascript";
 import NodeBadge from "./tech-badges/NodeJs";
 import ReactBadge from "./tech-badges/React";
 import TsBadge from "./tech-badges/Typescript";
+import NextBadge from "./tech-badges/NextJs";
 
 interface Project {
   name: string;
@@ -56,6 +57,8 @@ const Project = ({ project, badges }: ProjectProps) => {
                 return <ReactBadge />;
               case "node":
                 return <NodeBadge />;
+              case "nextjs":
+                return <NextBadge />;
               default:
                 return <></>;
             }
