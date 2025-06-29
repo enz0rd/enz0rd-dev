@@ -15,6 +15,15 @@ const projectsData = [
     },
     {
         project: {
+            name: 'quickurl',
+            description: 'quickurl is an url shortener made using nextjs, react and prisma',
+            image: '/images/Projects/quickurl.jpg',
+            url: 'https://quickurl.com.br',
+        },
+        badges: ['ts', 'nextjs', 'react', 'node']
+    },
+    {
+        project: {
             name: 'GoClass',
             description: 'An educational platform like Google Classroom',
             image: '/images/Projects/GoClass.png',
