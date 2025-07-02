@@ -16,7 +16,7 @@ const projectsData = [
     {
         project: {
             name: 'quickurl',
-            description: 'quickurl is an url shortener made using nextjs, react and prisma',
+            description: 'quickurl is a url shortener made using nextjs, react and prisma',
             image: '/images/Projects/quickurl.jpg',
             url: 'https://quickurl.com.br',
         },
