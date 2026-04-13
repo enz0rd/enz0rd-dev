@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -23,7 +24,7 @@ export default function RootLayout({
       lang="en"
       className={`${jetBrainsMono.className} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col"><TooltipProvider>{children}</TooltipProvider></body>
     </html>
   );
 }
