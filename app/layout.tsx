@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import DarkVeil from "@/components/DarkVeil";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -20,11 +21,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${jetBrainsMono.className} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col"><TooltipProvider>{children}</TooltipProvider></body>
+    <html lang="en" className={`${jetBrainsMono.className} h-full antialiased`}>
+      <body className="min-h-full flex flex-col bg-zinc-900">
+        <div className="fixed inset-0 -z-10 min-h-screen w-screen">
+          <DarkVeil
+            hueShift={150}
+            noiseIntensity={0}
+            scanlineIntensity={0}
+            speed={0.5}
+            scanlineFrequency={0}
+            warpAmount={0}
+            
+          />
+        </div>
+        <TooltipProvider>{children}</TooltipProvider>
+      </body>
     </html>
   );
 }

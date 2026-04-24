@@ -10,7 +10,7 @@ export default function TechnologiesSection() {
       <div className="text-md mx-5 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-rows-4 lg:grid-rows-2 gap-x-10">
         <Tooltip>
           <TooltipTrigger>
-            <li className="hover:text-purple-500 transition .7s cursor-default">
+            <li className="hover:text-blue-500 transition .7s cursor-default">
               TypeScript
             </li>
           </TooltipTrigger>
