@@ -21,6 +21,15 @@ export default function TechnologiesSection() {
         <li className="hover:text-sky-500 transition .7s cursor-default">
           React
         </li>
+        <li className="hover:text-violet-500 transition .7s cursor-default">
+          PHP
+        </li>
+        <li className="hover:text-red-500 transition .7s cursor-default">
+          Laravel
+        </li>
+        <li className="hover:text-emerald-500 transition .7s cursor-default">
+          Vue.js
+        </li>
         <Tooltip>
           <TooltipTrigger>
             <li className="hover:text-mist-500 transition text-start .7s cursor-default">
@@ -50,6 +59,9 @@ export default function TechnologiesSection() {
             <p>my main database</p>
           </TooltipContent>
         </Tooltip>
+        <li className="hover:text-cyan-500 transition .7s cursor-default">
+          MySQL
+        </li>
         <li className="hover:text-green-500 transition .7s cursor-default">
           Playwright
         </li>
