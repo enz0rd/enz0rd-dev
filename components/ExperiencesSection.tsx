@@ -12,7 +12,7 @@ export default function ExperiencesSection() {
         <div className="flex flex-col gap-2">
           <h2 className="font-black text-lg border-b">active:</h2>
           <div className="flex flex-col gap-1 border-b">
-            <span>Quality Assurance Analyst at </span>
+            <span>Fullstack developer Jr. at</span>
             <a href="https://gdoor.com.br/" target="_blank" className="flex gap-2 items-center hover:text-orange-500">Gdoor Zucchetti <ExternalLink size={16} /></a>
           </div>
           <div className="flex flex-col gap-1">
@@ -23,12 +23,12 @@ export default function ExperiencesSection() {
         <div className="flex flex-col gap-2">
           <h2 className="font-black text-lg border-b">past:</h2>
           <div className="flex flex-col gap-1 border-b">
-            <span>Customer Support at </span>
+            <span>Quality Assurance Analyst </span>
             <a href="https://gdoor.com.br/" target="_blank" className="flex gap-2 items-center hover:text-orange-500">Gdoor Zucchetti <ExternalLink size={16} /></a>
           </div>
           <div className="flex flex-col gap-1">
-            <span>Graphic designer at </span>
-            <a href="https://www.microsite.net.br/" target="_blank" className="flex gap-2 items-center hover:text-purple-500">Microsite Digital Agency <ExternalLink size={16} /></a>            
+            <span>Customer Support at </span>
+            <a href="https://gdoor.com.br/" target="_blank" className="flex gap-2 items-center hover:text-orange-500">Gdoor Zucchetti <ExternalLink size={16} /></a>
           </div>
         </div>
       </div>
