@@ -4,6 +4,7 @@ import { Reveal } from "@/components/reveal";
 import { HeroSection } from "@/components/sections/hero-section";
 import { ProjectsSection } from "@/components/sections/projects-section";
 import { ExperienceSection } from "@/components/sections/experience-section";
+import { EducationSection } from "@/components/sections/education-section";
 import { CertificationsSection } from "@/components/sections/certifications-section";
 import { SkillsSection } from "@/components/sections/skills-section";
 
@@ -20,6 +21,9 @@ export default function Home() {
         </Reveal>
         <Reveal>
           <ExperienceSection />
+        </Reveal>
+        <Reveal>
+          <EducationSection />
         </Reveal>
         <Reveal>
           <CertificationsSection />

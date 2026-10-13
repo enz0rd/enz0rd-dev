@@ -21,11 +21,19 @@ export type Certification = {
   note?: string;
 };
 
+export type EducationItem = {
+  degree: string;
+  institution: string;
+  period: string;
+  href?: string;
+};
+
 export type Content = {
   nav: {
     presentation: string;
     projects: string;
     experience: string;
+    education: string;
     certifications: string;
     skills: string;
   };
@@ -42,6 +50,10 @@ export type Content = {
   experience: {
     title: string;
     items: ExperienceItem[];
+  };
+  education: {
+    title: string;
+    items: EducationItem[];
   };
   certifications: {
     title: string;
@@ -63,6 +75,7 @@ export type Content = {
 
 const GDOOR_URL = "https://gdoor.com.br/";
 const ZUCCHETTI_URL = "https://www.zucchettibrasil.com.br/";
+const UNOCHAPECO_URL = "https://uno.edu.br/";
 
 export const content: Record<Locale, Content> = {
   pt: {
@@ -70,6 +83,7 @@ export const content: Record<Locale, Content> = {
       presentation: "Apresentação",
       projects: "Projetos",
       experience: "Experiências",
+      education: "Formação",
       certifications: "Certificações",
       skills: "Habilidades",
     },
@@ -184,6 +198,32 @@ export const content: Record<Locale, Content> = {
         },
       ],
     },
+    education: {
+      title: "Formação acadêmica",
+      items: [
+        {
+          degree: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+          institution: "Unochapecó",
+          period: "Jan 2026 — Jul 2028",
+          href: UNOCHAPECO_URL,
+        },
+        {
+          degree: "Técnico em Tecnologia da Informação",
+          institution: "Senac Santa Catarina",
+          period: "Mar 2024 — Dez 2024",
+        },
+        {
+          degree: "Técnico em Programação",
+          institution: "Senac Santa Catarina",
+          period: "Jul 2022 — Dez 2022",
+        },
+        {
+          degree: "Ensino Médio Completo",
+          institution: "E.E.B. Vidal Ramos Júnior",
+          period: "2020 — 2022",
+        },
+      ],
+    },
     certifications: {
       title: "Certificações",
       issuedLabel: "Emitido em",
@@ -214,6 +254,7 @@ export const content: Record<Locale, Content> = {
       presentation: "About",
       projects: "Projects",
       experience: "Experience",
+      education: "Education",
       certifications: "Certifications",
       skills: "Skills",
     },
@@ -319,6 +360,32 @@ export const content: Record<Locale, Content> = {
           role: "Intern",
           company: "CIEE - Centro de Integração Empresa-Escola",
           period: "Nov 2021 — Feb 2022",
+        },
+      ],
+    },
+    education: {
+      title: "Education",
+      items: [
+        {
+          degree: "Associate Degree in Systems Analysis and Development",
+          institution: "Unochapecó",
+          period: "Jan 2026 — Jul 2028",
+          href: UNOCHAPECO_URL,
+        },
+        {
+          degree: "Technical Degree in Information Technology",
+          institution: "Senac Santa Catarina",
+          period: "Mar 2024 — Dec 2024",
+        },
+        {
+          degree: "Technical Degree in Programming",
+          institution: "Senac Santa Catarina",
+          period: "Jul 2022 — Dec 2022",
+        },
+        {
+          degree: "High School Diploma",
+          institution: "E.E.B. Vidal Ramos Júnior",
+          period: "2020 — 2022",
         },
       ],
     },
