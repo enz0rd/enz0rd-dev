@@ -48,8 +48,50 @@
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: 'var(--font-jetbrains-mono)', monospace;
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 16px -22px;
+  }
+}
+
+@keyframes float-slower {
+  0%,
+  100% {
+    translate: 0 0;
+  }
+  50% {
+    translate: -20px 16px;
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 11s ease-in-out infinite;
+}
+
+.animate-float-slower {
+  animation: float-slower 15s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .animate-float-slow,
+  .animate-float-slower {
+    animation: none;
+  }
 }
 
 :root {

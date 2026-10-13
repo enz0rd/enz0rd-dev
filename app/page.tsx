@@ -1,21 +1,34 @@
-import ExperiencesSection from "@/components/ExperiencesSection";
-import HiddenDuck from "@/components/HiddenDuck";
-import HomeSection from "@/components/HomeSection";
-import InfoSection from "@/components/InfoSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import SocialSection from "@/components/SocialSection";
-import TechnologiesSection from "@/components/TechnologiesSection";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Reveal } from "@/components/reveal";
+import { HeroSection } from "@/components/sections/hero-section";
+import { ProjectsSection } from "@/components/sections/projects-section";
+import { ExperienceSection } from "@/components/sections/experience-section";
+import { CertificationsSection } from "@/components/sections/certifications-section";
+import { SkillsSection } from "@/components/sections/skills-section";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 lg:py-25 md:py-20 gap-10 py-15 text-mist-100 bg-zinc-900/10 backdrop-blur-lg">
-      <HomeSection />
-      <InfoSection />
-      <TechnologiesSection />
-      <ProjectsSection />
-      <ExperiencesSection />
-      <SocialSection />
-      <HiddenDuck />
+    <div className="flex min-h-full flex-1 flex-col bg-background/70 backdrop-blur-xl">
+      <Header />
+      <main className="flex flex-1 flex-col gap-20 py-16 md:gap-28 md:py-20">
+        <Reveal>
+          <HeroSection />
+        </Reveal>
+        <Reveal>
+          <ProjectsSection />
+        </Reveal>
+        <Reveal>
+          <ExperienceSection />
+        </Reveal>
+        <Reveal>
+          <CertificationsSection />
+        </Reveal>
+        <Reveal>
+          <SkillsSection />
+        </Reveal>
+      </main>
+      <Footer />
     </div>
   );
 }

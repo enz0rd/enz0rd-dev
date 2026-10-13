@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import DarkVeil from "@/components/DarkVeil";
+import { Providers } from "@/components/providers/providers";
+import { DarkVeilBackground } from "@/components/dark-veil-background";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -15,26 +15,23 @@ export const metadata: Metadata = {
   description: "Portfolio of @enz0rd, a fullstack developer.",
 };
 
+const themeInitScript = `(function(){try{var t=localStorage.getItem('theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';}document.documentElement.classList.toggle('dark',t==='dark');}catch(e){}})();`;
+
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${jetBrainsMono.className} h-full antialiased`}>
-      <body className="min-h-full flex flex-col bg-zinc-900">
-        <div className="fixed inset-0 -z-10 min-h-screen w-screen">
-          <DarkVeil
-            hueShift={150}
-            noiseIntensity={0}
-            scanlineIntensity={0}
-            speed={0.5}
-            scanlineFrequency={0}
-            warpAmount={0}
-            
-          />
-        </div>
-        <TooltipProvider>{children}</TooltipProvider>
+    <html lang="pt" className={`${jetBrainsMono.className} h-full antialiased`} suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
+      </head>
+      <body className="min-h-full flex flex-col bg-background text-foreground">
+        <Providers>
+          <DarkVeilBackground />
+          {children}
+        </Providers>
       </body>
     </html>
   );
